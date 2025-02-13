@@ -1,3 +1,4 @@
+
 /*
 En ESModules hay que invocar al archivo con su extensión
 Esto es necesario ya que esto ocurre en el navegador
@@ -14,10 +15,13 @@ Observen el dist/index.js
 
 import { headerComponent } from "./header.js";
 import { productsListComponent } from "./products.js";
+import { footerComponent } from "./footer.js";  
 
 document.addEventListener("DOMContentLoaded", () => {
   const headerContainer = document.getElementById("header");
   const productsContainer = document.getElementById("products");
+  const footerContainer = document.getElementById("footer");
   headerContainer.appendChild(headerComponent());
   productsContainer.appendChild(productsListComponent());
+  footerContainer.appendChild(footerComponent());
 });
